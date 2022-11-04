@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital CHATBOT</title>
+    <style>
+        .image {
+            float: left;
+            border-radius: 20px;
+        }
+        
+        .image1 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#dcf3f5">
+
+    
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "68c4feec-df3a-4f18-958f-8695071d6c07", // The ID of this integration.
+          region: "jp-tok", // The region your integration is hosted in.
+          serviceInstanceID: "a8d9e157-be28-4ab4-92a7-fa5eb12ba528", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+
+</html>
