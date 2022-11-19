@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> NUTRITION </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/mainpage.css">    
+    <script>
+        //image = document.getElementById('myImage');
+       function clearImage() {
+           image.src = "{{url_for('static',filename='src/user.jpg')}}";  //onclick="document.getElementById('myImage').src='src/omplate.png'"
+       }
+
+       function setImage() {
+           image.src = "{{url_for('static',filename='src/food.jpg')}}";
+       }
+   </script>
+   <script src="{{url_for('static', filename='js/dashboard.js')}}">
+       
+   </script>
+
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+        <div class="logo">
+          <h1>NUTRITION</h1>  
+         </div>
+        </div>
+<ul class="nav-area">
+<li><a type="button" href="logout">Log Out</a></li>
+<li><a type="button" href="dashboard">dashboard</a></li>
+</ul>
+</div>
+<div class="welcome-text">
+        <h1>
+    Welcome {{session.username}}!<h3> <span>Check Nutrition Values of food by click the dashboard</span></h3></h1>
+<form action="/mainpage" method="post">
+ </div>
+</header>
+</body>
+</html>

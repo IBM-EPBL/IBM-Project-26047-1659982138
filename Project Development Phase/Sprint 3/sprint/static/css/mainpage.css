@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://media.gettyimages.com/photos/two-fresh-salad-bowls-picture-id919666108?k=6&m=919666108&s=612x612&w=0&h=joLolauM1vUulZ-oo9Lhn53Xw5zRht_cvPDW8D_IJLM=);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.logo {
+    float: left;
+}
+
+.logo h1 {
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: -110px
+}
+
+.welcome-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-top: -120px;
+}
+
+.welcome-text h3 span {
+    color: #00fecb;
+}
+
+.welcome-text h3 {
+    color: white;
+}
+
+.welcome-text a {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 40px;
+    display: inline-block;
+    color: #fff;
+}
+
+.welcome-text a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.jinja h3 {
+    color: #fff;
+    font-size: 10px;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 450px;
+}
+
+label {
+    display: inline-block;
+    background-color: indigo;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+/*resposive*/
+
+@media (max-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+    .logo {
+        float: left;
+        width: 100%;
+        text-align: left;
+        margin: 10 100px 0;
+        margin-left: 120px;
+    }
+    img {}
+    .nav-area {
+        float: right;
+        margin-top: -30px;
+    }
+    .nav-area li a {
+        padding: 5px;
+        font-size: 11px;
+    }
+    .nav-area {
+        text-align: right;
+    }
+    .welcome-text {
+        width: 100%;
+        height: auto;
+        margin: 70% 0;
+    }
+    .welcome-text h1 {
+        font-size: 30px;
+    }
+}
