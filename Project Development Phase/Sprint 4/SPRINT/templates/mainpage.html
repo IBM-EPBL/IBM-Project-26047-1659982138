@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> NUTRITION </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/mainpage.css">    
+    <script>
+        //image = document.getElementById('myImage');
+       function clearImage() {
+           image.src = "{{url_for('static',filename='src/user.jpg')}}";  //onclick="document.getElementById('myImage').src='src/omplate.png'"
+       }
+
+       function setImage() {
+           image.src = "{{url_for('static',filename='src/food.jpg')}}";
+       }
+   </script>
+   <script src="{{url_for('static', filename='js/dashboard.js')}}">
+       
+   </script>
+
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+        <div class="logo">
+          <h1>NUTRITION</h1>  
+         </div>
+        </div>
+<ul class="nav-area">
+<li><a type="button" href="logout">Log Out</a></li>
+<li><a type="button" href="dashboard">dashboard</a></li>
+</ul>
+</div>
+<div class="welcome-text">
+        <h1>
+    Welcome {{session.username}}!<h3> <span>Check Nutrition Values of food by click the dashboard</span></h3></h1>
+</div> 
+
+              <p style="color:white;padding-top: 350px;">
+                Nutritional support is the provision of adequate nutrients to maintain a 
+                healthy body weight and avoid malnutrition. The continuous delivery of 
+                high-quality and cost-effective nutritional care to patients has been 
+                shown to be an increasingly difficult task. It is observed that dieticians 
+                are requested to carry out the nutritional assessment, to manually 
+                calculate the nutritional needs and to design the everyday meal plan for 
+                each patient. In most cases, these time-consuming tasks are not completed 
+                due to lack of time or inadequate number of personnel. Development of a 
+                computer assisted information tool with cloud-based on-line diet 
+                consultation module and comparison of its efficacy with one- to-one 
+                counselling would be efficiently utilized for client education intervention 
+                programs. The nutrient content calculation was planned to undertake with 
+                commonly consumed traditional as well as junk foods
+              </p>
+
+
+    <form action="/mainpage" method="post">
+ 
+</header>
+</body>
+</html>
