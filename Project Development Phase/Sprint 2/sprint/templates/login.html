@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../static/css/login.css">    
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active">login</h2>
+   
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h1>NUTRITION</h1>
+    </div>
+
+    <!-- Login Form -->
+    <form action="/login" method="post">
+      <input type="text" id="username" class="fadeIn second" name="username" placeholder="username">
+      <input type="text" id="email" class="fadeIn third" name="password" placeholder="password">
+
+      <input type="submit" class="fadeIn fifth" value="login">
+    </form>
+   {{msg}}
+   <br>
+<br>
+ <div id="formFooter">
+<h3> Create Acccount?</h3>
+      <a class="underlineHover" href="register">signup</a>
+    </div>
+ 
+</div>
+</body>
+</html>
