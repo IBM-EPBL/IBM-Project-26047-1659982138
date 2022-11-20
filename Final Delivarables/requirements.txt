@@ -1,0 +1,5 @@
+flask
+ibm_db
+sendgrid
+clarifai_grpc
+cryptography
