@@ -3,6 +3,3 @@ ibm_db
 sendgrid
 clarifai_grpc
 cryptography
-markupsafe
-requests
-escape
